@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>Главная</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Главная</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img src="IvanBelovProductions Logo.png" width="150" height="150" alt="Описание изображения" >
-  <h1>Привет, мир!</h1>
-  <hr>
-  <p>Добро пожаловать на сайт IvanBelovProductions!</p>
-<a href="info.html">инфа</a>
-<hr>
+    <!-- Анимированный фон -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
 
-  </body>
+    <!-- Навигация -->
+    <nav class="glass-nav">
+        <a href="index.html" class="nav-link active">Главная</a>
+        <a href="about.html" class="nav-link">Обо мне</a>
+        <a href="info.html" class="nav-link">Контакты</a>
+    </nav>
+
+    <!-- Главный контент -->
+    <main class="hero">
+        <div class="glass-card hero-card">
+            <div class="avatar-glow">
+                <div class="avatar">AM</div>
+            </div>
+            <h1 class="hero-name">Иван Белов/IvanBelovProductions</h1>
+            <p class="hero-title">Начинающий программист &amp; Просто человек</p>
+            <p class="hero-desc">Создаю цифровые продукты, которые выглядят как жидкое стекло — плавные, прозрачные и завораживающие.</p>
+            <div class="hero-buttons">
+                <a href="about.html" class="btn-glass">Узнать больше</a>
+                <a href="info.html" class="btn-glass btn-outline">Связаться</a>
+            </div>
+        </div>
+
+        <!-- Мини-галерея проектов -->
+        <div class="projects-row">
+            <div class="glass-card project-card">
+                <div class="project-icon">✨</div>
+                <h3>Liquid Dashboard</h3>
+                <p>Интерфейс аналитики в стиле glassmorphism</p>
+            </div>
+            <div class="glass-card project-card">
+                <div class="project-icon">🧊</div>
+                <h3>Frost UI Kit</h3>
+                <p>Библиотека стеклянных компонентов для React</p>
+            </div>
+            <div class="glass-card project-card">
+                <div class="project-icon">🌊</div>
+                <h3>Wave Studio</h3>
+                <p>Платформа для создания анимированных фонов</p>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
