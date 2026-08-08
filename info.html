@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио | Обо мне</title>
+    <title>Портфолио | Контакты</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,57 +18,41 @@
     <!-- Навигация -->
     <nav class="glass-nav">
         <a href="index.html" class="nav-link">Главная</a>
-        <a href="about.html" class="nav-link active">Обо мне</a>
-        <a href="info.html" class="nav-link">Контакты</a>
+        <a href="about.html" class="nav-link">Обо мне</a>
+        <a href="info.html" class="nav-link active">Контакты</a>
     </nav>
 
     <!-- Контент страницы -->
     <main class="page-content">
-        <div class="glass-card about-card">
-            <div class="about-header">
-                <div class="avatar-large">
-<img class="avatar-large-img" src="IvanBelovProductions Logo.png">
-</div>
-                <div>
-                    <h2>Иван Белов/IvanBelovProductions</h2>
-                    <p class="subtitle">Full-stack разработчик / UI дизайнер</p>
-                </div>
-            </div>
-            <p class="about-text">
-                Добро пожаловать на мою страничку! Здесь возможно будут мои проекты.
-            </p>
+        <div class="glass-card contact-card">
+            <h2>Давайте работать вместе</h2>
+            <p>Я открыт для новых проектов и сотрудничества. Напишите мне — обсудим вашу идею.</p>
 
-            <h3>Навыки</h3>
-            <div class="skills-grid">
-                <span class="skill-tag">HTML/CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Vue.js</span>
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">GSAP</span>
-                <span class="skill-tag">Three.js</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">UI/UX</span>
+            <div class="contact-links">
+                <a href="mailto:alex@liquidglass.me" class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>alex@liquidglass.me</span>
+                </a>
+                <a href="#" class="contact-item">
+                    <span class="contact-icon">💬</span>
+                    <span>@alexmorgandesign</span>
+                </a>
+                <a href="#" class="contact-item">
+                    <span class="contact-icon">🐙</span>
+                    <span>github.com/alexmorgan</span>
+                </a>
             </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Сообщение отправлено! (демо)')">
+                <input type="text" class="glass-input" placeholder="Ваше имя" required>
+                <input type="email" class="glass-input" placeholder="Email" required>
+                <textarea class="glass-input" rows="4" placeholder="Сообщение..." required></textarea>
+                <button type="submit" class="btn-glass">Отправить</button>
+            </form>
         </div>
 
-        <div class="glass-card timeline-card">
-            <h3>Опыт</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="year">2024</span>
-                    <p>Ведущий разработчик в <strong>GlassLab Studio</strong></p>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2022</span>
-                    <p>UI-дизайнер в <strong>PixelFlow Agency</strong></p>
-                </div>
-                <div class="timeline-item">
-                    <span class="year">2019</span>
-                    <p>Фриланс, первые проекты на стеклянных интерфейсах</p>
-                </div>
-            </div>
+        <div class="glass-card quote-card">
+            <p class="quote">«Дизайн — это не просто то, как продукт выглядит. Дизайн — это то, как он работает, ощущается и взаимодействует с человеком.»</p>
         </div>
     </main>
 </body>
