@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
 
+    <!-- Навигация -->
+    <nav class="glass-nav">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="about.html" class="nav-link">Обо мне</a>
+        <a href="info.html" class="nav-link active">Контакты</a>
+    </nav>
+
+    <!-- Контент страницы -->
+    <main class="page-content">
+        <div class="glass-card contact-card">
+            <h2>Давайте работать вместе</h2>
+            <p>Я открыт для новых проектов и сотрудничества. Напишите мне — обсудим вашу идею.</p>
+
+            <div class="contact-links">
+                <a href="mailto:alex@liquidglass.me" class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>alex@liquidglass.me</span>
+                </a>
+                <a href="#" class="contact-item">
+                    <span class="contact-icon">💬</span>
+                    <span>@alexmorgandesign</span>
+                </a>
+                <a href="#" class="contact-item">
+                    <span class="contact-icon">🐙</span>
+                    <span>github.com/alexmorgan</span>
+                </a>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Сообщение отправлено! (демо)')">
+                <input type="text" class="glass-input" placeholder="Ваше имя" required>
+                <input type="email" class="glass-input" placeholder="Email" required>
+                <textarea class="glass-input" rows="4" placeholder="Сообщение..." required></textarea>
+                <button type="submit" class="btn-glass">Отправить</button>
+            </form>
+        </div>
+
+        <div class="glass-card quote-card">
+            <p class="quote">«Дизайн — это не просто то, как продукт выглядит. Дизайн — это то, как он работает, ощущается и взаимодействует с человеком.»</p>
+        </div>
+    </main>
+</body>
+</html>
